@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="addtocart.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://kit.fontawesome.com/92d70a2fd8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <input
+        type="search"
+        class="Search"
+        id="search-input"
+        placeholder="Search Product..."
+      />
+      <div class="addProd" onclick="formProd()">
+        <span class="material-symbols-outlined"> add </span>
+      </div>
+      <div class="cart" onclick="showcart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <p id="count">0</p>
+      </div>
+    </div>
+    <div class="container">
+      <div id="root"></div>
+      <div class="sidebar">
+        <div class="head">
+          <p>My Cart</p>
+          <div class="closeCart" onclick="closecart()">&#128473;</div>
+        </div>
+        <div id="cartItem">Your cart is empty</div>
+        <div class="foot">
+          <h3>Total</h3>
+          <h2 id="total">$ 0.00</h2>
+        </div>
+      </div>
+      <div class="form">
+        <div>
+          <div class="closeForm" onclick="closeForm()">&#128473;</div>
+        </div>
+        <form id="productForm" class="submitForm">
+          <img id="blah" src="#" alt="Preview Image" />
+          <input class="imgProd" id="img" type="file" />
+          <input class="nameProd" id="name" type="text" />
+          <input class="codeProd" id="code" type="text" />
+          <input class="priceProd" id="price" type="int" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      
+      <div class="updateForm">
+        <div>
+          <div class="closeForm" onclick="closeupdateForm()">&#128473;</div>
+        </div>
+        <form id="productupdateForm" class="submitupdateForm">
+          <img id="updateblah" src="#" alt="Preview Image" />
+          <input class="imgProd" id="updateimg" type="file" />
+          <input class="nameProd" id="updatename" type="text" />
+          <input class="codeProd" id="updatecode" type="text" />
+          <input class="priceProd" id="updateprice" type="int" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="addtocart.js"></script>
+  </body>
+</html>

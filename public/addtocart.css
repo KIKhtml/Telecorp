@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+input:focus {
+  outline: none;
+}
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0d45a5;
+}
+.header {
+  height: 80px;
+  width: 70%;
+  background-color: rgb(47, 52, 79);
+  border-radius: 3px;
+  margin: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.Search {
+  width: 80%;
+  padding: 10px;
+  height: 40px;
+  /* width: 500px; */
+  border-color: rgba(50, 50, 93, 0.25);
+  border-radius: 10px;
+}
+
+.addProd span {
+  color: #fff;
+}
+.cart {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 3px;
+  width: 80px;
+}
+.fa-solid {
+  color: rgb(47, 52, 79);
+}
+.cart p {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background-color: rgb(47, 52, 79);
+  color: white;
+}
+.container {
+  display: flex;
+  position: relative;
+  width: 70%;
+  margin-bottom: 30px;
+}
+#root {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.sidebar {
+  width: 40%;
+  border-radius: 5px;
+  background-color: #eee;
+  margin-left: 20px;
+  padding: 15px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+.head {
+  background-color: rgb(47, 52, 79);
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid #333;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(47, 52, 79);
+  background: rgba(180, 183, 201, 0.168);
+  border-radius: 5px;
+  padding: 15px;
+  min-height: 250px;
+}
+.desp{
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.upDel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.img-box {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.images {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+.bottom {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+}
+h2 {
+  font-size: 14px;
+  color: red;
+}
+button {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(47, 52, 79);
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+}
+button:hover {
+  background-color: #333;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 10px 10px;
+}
+.row-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid rgb(47, 52, 79);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rowimg {
+  max-width: 43px;
+  max-height: 43px;
+  border-radius: 50%;
+}
+.fa-trash:hover {
+  cursor: pointer;
+  color: #333;
+}
+
+.form,
+.updateForm {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 10px;
+  width: 80%;
+  height: auto;
+  background: rgba(191, 188, 182, 0.756);
+  position: absolute;
+  display: none;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+.submitForm,
+.submitupdateForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.submitForm input,
+.submitupdateForm input {
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+}
+input.imgProd {
+  height: 60px;
+  padding: 10px;
+  background: #bcbaba6d;
+}
+.submitForm img,
+.submitupdateForm img {
+  height: auto;
+  width: 100%;
+}
+.closeForm,
+.delProd {
+  text-align: right;
+  color: red;
+}
